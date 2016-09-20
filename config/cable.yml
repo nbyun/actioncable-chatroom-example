@@ -1,0 +1,9 @@
+# Action Cable uses Redis to administer connections, channels, and sending/receiving messages over the WebSocket.
+production:
+  url: <%= ENV['REDIS_URL'] || 'redis://localhost:6379' %>
+
+development:
+  url: redis://127.0.0.1:6379
+
+test:
+  url: redis://localhost:6379
